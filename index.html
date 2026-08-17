@@ -5,6 +5,11 @@
 <title>Wodah Gabriel — Growth for Creators &amp; Streamers</title>
 <meta name="description" content="Multi-platform marketing, promotion, and automation for YouTube, Twitch, Kick, and TikTok creators who want real audience growth.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -13,14 +18,19 @@
 
 <nav class="nav">
   <a class="nav-logo" href="index.html">WODAH <span class="accent">GABRIEL</span></a>
-  <div class="nav-links">
+  <div class="nav-links" id="nav-links">
     <a class="nav-link active" href="index.html">Home</a>
     <a class="nav-link" href="services.html">Services</a>
     <a class="nav-link" href="portfolio.html">Portfolio</a>
     <a class="nav-link" href="about.html">About</a>
     <a class="nav-link" href="contact.html">Contact</a>
   </div>
-  <a class="btn btn-primary" href="contact.html">BOOK A CALL</a>
+  <div class="nav-right">
+    <a class="btn btn-primary" href="contact.html">BOOK A CALL</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -403,6 +413,7 @@
   <div class="footer-bottom">&copy; 2026 Wodah Gabriel. All rights reserved.</div>
 </footer>
 
+<script src="js/nav.js"></script>
 <script src="js/counters.js"></script>
 </body>
 </html>
