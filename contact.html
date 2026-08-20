@@ -63,8 +63,41 @@
           </select>
         </div>
         <div>
-          <div class="field-label">MESSAGE</div>
-          <textarea name="message" placeholder="What are you trying to grow?" rows="4"></textarea>
+          <div class="field-label">CHANNEL NAME OR LINK</div>
+          <input type="text" name="channel_link" placeholder="e.g. youtube.com/@yourchannel">
+        </div>
+        <div>
+          <div class="field-label">CHANNEL GOAL &amp; OBJECTIVE</div>
+          <textarea name="channel_goal" placeholder="What do you want to achieve? e.g. grow subscribers, increase views, monetize faster" rows="3"></textarea>
+        </div>
+        <div>
+          <div class="field-label">TARGET REVENUE GOAL</div>
+          <input type="text" name="target_revenue" placeholder="e.g. $5,000/month">
+        </div>
+        <div>
+          <div class="field-label">PROJECT BUDGET</div>
+          <div class="budget-group" role="radiogroup" aria-label="Project budget">
+            <div class="budget-option">
+              <input type="radio" name="budget" id="budget-a" value="A - $1,000" required>
+              <label for="budget-a"><span class="budget-letter">A</span><span class="budget-amount">$1,000</span></label>
+            </div>
+            <div class="budget-option">
+              <input type="radio" name="budget" id="budget-b" value="B - $2,000">
+              <label for="budget-b"><span class="budget-letter">B</span><span class="budget-amount">$2,000</span></label>
+            </div>
+            <div class="budget-option">
+              <input type="radio" name="budget" id="budget-c" value="C - $5,000">
+              <label for="budget-c"><span class="budget-letter">C</span><span class="budget-amount">$5,000</span></label>
+            </div>
+            <div class="budget-option">
+              <input type="radio" name="budget" id="budget-d" value="D - $10,000+">
+              <label for="budget-d"><span class="budget-letter">D</span><span class="budget-amount">$10,000+</span></label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="field-label">ANYTHING ELSE? (OPTIONAL)</div>
+          <textarea name="message" placeholder="Any other details you'd like to share" rows="3"></textarea>
         </div>
         <button type="submit" class="contact-submit">SEND MESSAGE</button>
         <div class="form-status" id="form-status" role="status"></div>

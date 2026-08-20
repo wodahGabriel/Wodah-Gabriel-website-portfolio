@@ -1498,6 +1498,69 @@ a {
   border-color: #7c5cff;
 }
 
+.budget-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.budget-option {
+  position: relative;
+}
+
+.budget-option input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.budget-option label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 14px 10px;
+  background: #0d0e12;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.budget-letter {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #9a9aa5;
+}
+
+.budget-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f2f2f5;
+}
+
+.budget-option input:checked + label {
+  border-color: #7c5cff;
+  background: rgba(124, 92, 255, 0.14);
+  box-shadow: 0 0 0 1px #7c5cff inset;
+}
+
+.budget-option input:checked + label .budget-letter,
+.budget-option input:checked + label .budget-amount {
+  color: #c3b8ff;
+}
+
+.budget-option input:focus-visible + label {
+  outline: 2px solid #7c5cff;
+  outline-offset: 2px;
+}
+
 .contact-submit {
   padding: 16px;
   background: #7c5cff;
